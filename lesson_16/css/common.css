@@ -1,0 +1,66 @@
+/* Кнопка помаранчева */
+.button{
+ background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+ border-radius: 4px;
+ font-weight: 700;
+ color: #FFFFFF;
+ padding:16px 40px;
+ letter-spacing: 0.5px;
+ position: relative;
+ display: inline-block;
+ line-height: 1.25;
+ font-size: 16px;
+}
+.button span{
+ position: relative;
+ z-index: 2; 
+}
+.button::before{
+   content: "";
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top:0;
+   left:0;
+   opacity: 0;
+   background: linear-gradient(55.95deg, #911813 0%, #a64d1a 100%);
+   border-radius: 4px;
+   transition: opacity 0.3s ease 0s;
+}
+.button:hover::before{
+   opacity: 1;
+}
+/* Кнопка з border */
+.button--border{
+   background: transparent;
+   color: #FF3F3A;
+   border: 1px solid #FF3F3A;
+   padding:15px 39px;
+   position: relative;
+   transition: all 0.3s ease 0s;
+}
+.button--border:hover{
+   color: white;
+   background: #FF3F3A;
+   border: 1px solid #FF3F3A;
+}
+/* Блок Why Createx? */
+.why {
+   color: #1E212C;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   gap: 8px;
+}
+.why__text {
+ font-weight: 700;
+ line-height: 1.5;
+ letter-spacing: 1px;
+ text-transform: uppercase;
+ font-size: 16px;
+}
+.why__question {
+   font-weight: 900;
+   font-size: 46px;
+   line-height: 1.3;
+}

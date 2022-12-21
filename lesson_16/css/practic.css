@@ -1,0 +1,126 @@
+
+.page__main {
+ margin: 180px 345px;
+}
+.practik__container {
+	max-width: 1275px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.body-practic {
+	display: flex;
+}
+.body-practic__picter{
+	margin-right: 40px;
+	flex: 0 1 50%;
+	align-self: center;
+}
+.body-practic__picter img {
+	max-width: 100%;
+}
+.body-practic__content {
+	display: flex;
+	flex: 0 1 50%;
+	flex-direction: column;
+}
+ .why:not(:last-child) {
+	margin-bottom: 40px;
+}
+.content-body__data{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -25px;
+	row-gap: 24px;
+}
+.content-body__data:not(:last-child) {
+	margin-bottom: 24px;
+}
+.data__form{
+	flex: 0 1 50%;
+	padding: 0 25px;
+	font-size: 16px;
+   line-height: 1.6;
+	display: flex;
+	flex-direction: column;
+}
+.data__label {
+	color: #424551;
+   margin-bottom: 8px;
+}
+.data__input {
+	outline: 1px solid #D7DADD;
+   padding-left: 13px;
+   height: 52px;
+	border-radius: 4px;
+	color: #9A9CA5;
+}
+/* message */
+.message-content{
+	line-height: 1.6;
+}
+.content-body__message:not(:last-child){
+	margin-bottom: 48px;
+}
+.message-content__form {
+	font-size: 16px;
+   line-height: 1.6;
+	display: flex;
+	flex-direction: column;
+}
+.message-content__label {
+	color: #424551;
+   margin-bottom: 8px;
+}
+.message-content__area {
+	outline: 1px solid #D7DADD;
+   height: 128px;
+   max-width: 100%;
+   resize: vertical;
+	align-self: stretch;
+	border-radius: 4px;
+	padding-left: 16px;
+	padding-top: 13px;
+	color: #9A9CA5;
+}
+.check {
+	display: flex;
+	gap: 50px;
+}
+.check__box {
+	position: relative;
+   line-height: 1.6; 
+   font-size: 16px;
+}
+.check__input {
+	position: absolute;
+	width: 0;
+	height: 0;
+	opacity: 0;
+}
+.check__input:checked + .check__label::before{
+	background:url("../img/checked.svg") center/ 100% no-repeat;
+}
+.check__label {
+	cursor: pointer;
+	display: inline-flex;
+	gap: 12px;
+}
+.check__label::before{
+	content: "";
+	flex: 0 0 16px;
+	width: 16px;
+	height: 16px;
+	background-color: #FF3F3A;
+	border-radius: 3px;
+	margin-top: 5px;
+}
+.check__text{
+ color: #424551;
+ flex: 0 1 287px;
+}
+.check__button {
+	letter-spacing: 0.5px;
+	flex: 0 1 340px;
+	height: 52px;
+}

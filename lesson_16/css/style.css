@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:regular,700,900&display=swap");
+body{
+   font-family: "Lato";
+	
+	font-size: 24px;
+	font-weight: 700;
+}
+.wrapper{
+	overflow: hidden;
+	min-height: 100%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+.wrapper > main{
+	flex-grow: 1;
+}
+.form {
+	padding: 50px;
+	color: #fff;
+	background: #333;
+}
+.form__line {
+	margin-bottom: 30px;
+	max-width: 400px;
+}
+.form__label {
+	display: inline-block;
+	margin-bottom: 10px;
+	color: #7A956B;
+}
+.form__input {
+	padding: 0px 15px;
+	height: 40px;
+}
+.form__input--chk {
+	width: auto;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+.form__title {
+	margin-bottom: 15px;
+	color: #794f45;
+}
+.form__input--radio {
+	width: auto;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+.form__area {
+	width: 100%;
+	padding: 15px;
+	height: 100px;
+	resize: vertical;
+}
+/* Кастомний checkbox */
+.checkbox {
+	position: relative;
+	margin-bottom: 15px;
+}
+.checkbox__input {
+	position: absolute;
+	width: 0;
+	height: 0;
+	opacity: 0;
+}
+.checkbox__input:checked + .checkbox__label::before{
+	background:#7A956B url("../img/check.svg") center / 70% no-repeat; 
+}
+.checkbox__label {
+	display: inline-flex;
+	gap: 10px;
+	cursor: pointer;
+}
+.checkbox__label::before {
+	content: "";
+	flex: 0 0 30px;
+	width: 30px;
+	height: 30px;
+	border-radius: 5px;
+	background-color:#794f45;
+}
+.checkbox__text {
+	align-self: center;
+}
+/* Кастомний radio */
+.radio {
+	position: relative;
+	margin-bottom: 10px;
+}
+.radio__title {
+	color: #7A956B;
+	margin-bottom: 15px;
+}
+.radio__label {
+	display: inline-flex;
+	gap: 10px;
+	cursor: pointer;
+}
+.radio__label::before {
+	content: "";
+	flex: 0 0 20px;
+	height: 20px;
+	background: #794f45;
+	border-radius: 5px;
+	align-self: center;
+}
+.radio__input {
+	position: absolute;
+	width: 0;
+	height: 0;
+	opacity: 0;
+}
+.radio__input:checked + .radio__label::before{
+	background: #7A956B  url("../img/check.svg")center / 70% no-repeat;
+}
+.form__button {
+	border: 1px solid #7A956B;
+	padding: 10px 15px;
+	border-radius: 30%;
+	background-color: #7A956B;
+	box-shadow: 0 8px 5px rgba(0,0,0,0.8);
+	transition: all 0.3s ease 0s;
+}
+.form__button:hover{
+	transform: translate(0px, 3px);
+	box-shadow: 0 5px 2px rgba(0,0,0,0.8);
+	background-color: #92a389;
+	color: grey;
+}
+.practic__button{
+	margin-left: 50px;
+	border: 1px solid #794f45;
+	padding: 10px;
+	border-radius: 20px;
+	background-color: #794f45;
+	box-shadow: 0 8px 5px rgba(0,0,0,0.8);
+	transition: all 0.3s ease 0s;
+}
+.form__button:hover{
+	transform: translate(0px, 3px);
+	box-shadow: 0 5px 2px rgba(0,0,0,0.8);
+}

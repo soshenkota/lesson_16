@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/common.css">
+   <link rel="stylesheet" href="css/practic.css">
+   <title>Lesson 16</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header"></header>
+      <main class="form">
+         <form action="https://jsonplaceholder.typicode.com/posts" method="post" class="form">
+            <!-- Тип text-->
+            <div class="form__line">
+               <label class="form__label" for="name-01">Введіть ПІБ</label>
+               <input class="form__input" id="name-01" placeholder="ПІБ" name="name" type="text">
+            </div>
+            <!-- Тип email-->
+            <div class="form__line">
+               <label class="form__label" for="mail-01">Введіть E-mail</label>
+               <input class="form__input" id="mail-01" placeholder="E-mail" name="mail" type="email">
+            </div>
+            <!-- Тип tel-->
+            <div class="form__line">
+               <label class="form__label" for="phone-01">Введіть телефон</label>
+               <input class="form__input" id="phone-01" placeholder="Введіть телефон" name="phone" autocomplete="off"
+                  type="tel">
+            </div>
+            <!-- Тип password-->
+            <div class="form__line">
+               <label class="form__label" for="pass-01">Введіть пароль</label>
+               <input class="form__input" id="pass-01" placeholder="пароль" name="pass" autocomplete="off"
+                  type="password">
+            </div>
+            <!-- Тип number-->
+            <div class="form__line">
+               <label class="form__label" for="number-01">Введіть номер</label>
+               <input class="form__input" id="number-01" placeholder="Введіть номер" name="amount" type="number">
+            </div>
+            <!-- Тип search-->
+            <div class="form__line">
+               <label class="form__label" for="search-01">Введіть пошуковий запит</label>
+               <input class="form__input" id="search-01" placeholder="Введіть пошуковий запит" name="search"
+                  type="search">
+            </div>
+            <!-- Тип color-->
+            <div class="form__line">
+               <label class="form__label" for="color-01">Введіть колір</label>
+               <input class="form__input" id="color-01" name="color" value="#ffffff" type="color">
+            </div>
+            <!-- Тип date-->
+            <div class="form__line">
+               <label class="form__label" for="date-01">Введіть дату</label>
+               <input class="form__input" id="date-01" name="date" type="date">
+            </div>
+            <!-- Тип range-->
+            <div class="form__line">
+               <input class="form__input" name="range" type="range">
+            </div>
+            <!-- Тип checkbox-множинний вибір-->
+            <div class="form__line">
+               <input class="form__input form__input--chk" id="green" name="green" type="checkbox">
+               <label class="form__label" for="green">Зелений колір</label>
+            </div>
+            <div class="form__line">
+               <input class="form__input form__input--chk" id="yellow" name="yellow" type="checkbox">
+               <label class="form__label" for="yellow">Жовтий колір</label>
+
+            </div>
+            <!-- Тип radio-одиночний вибір-->
+            <div class="form__line">
+               <div class="form__title">Улюблена тваринка:</div>
+               <input class="form__input form__input--radio" id="cat" value="cat" name="pet" type="radio">
+               <label class="form__label" for="cat">Кішка</label>
+            </div>
+            <div class="form__line">
+               <input class="form__input form__input--radio" id="dog" value="dog" name="pet" type="radio">
+               <label class="form__label" for="dog">Собака</label>
+            </div>
+            <!-- Тип file-додати файл-->
+            <div class="form__line">
+               <input class="form__input" name="file" multiple accept="image/jpeg" type="file">
+            </div>
+            <!-- Тег-textarea-->
+            <div class="form__line">
+               <textarea name="message" class="form__area"></textarea>
+            </div>
+            <!-- Тег-select з елементом option-->
+            <div class="form__line">
+               <select class="list">
+                  <option value="1">Пункт 1</option>
+                  <option value="2">Пункт 2</option>
+                  <option value="3">Пункт 3</option>
+                  <option value="4">Пункт 4</option>
+                  <option value="5">Пункт 5</option>
+               </select>
+            </div>
+            <!-- Кастомний checkbox-->
+            <div class="form__line">
+               <div class="checkbox">
+                  <input class="checkbox__input" id="red" name="red" value="yes" type="checkbox">
+                  <label class="checkbox__label" for="red"><span class="checkbox__text">Червоний колір</span></label>
+               </div>
+               <div class="checkbox">
+                  <input class="checkbox__input" id="white" name="white" value="yes" type="checkbox">
+                  <label class="checkbox__label" for="white"><span class="checkbox__text">Білий колір</span></label>
+               </div>
+            </div>
+            <!-- Кастомний radio-->
+            <div class="form__line">
+               <div class="radio">
+                  <div class="radio__title">Улюблені солодощі:</div>
+                  <input class="radio__input" id="cake" value="cake" name="food" type="radio">
+                  <label class="radio__label" for="cake"><span class="radio__text">Торт</span></label>
+               </div>
+               <div class="radio">
+                  <input class="radio__input" id="ice-cream" value="ice-cream" name="food" type="radio">
+                  <label class="radio__label" for="ice-cream"><span class="radio__text">Морозиво</span></label>
+               </div>
+            </div>
+            <!-- Button -->
+            <div class="form__line">
+               <button class="form__button" type="submit">Надіслати</button>
+            </div>
+         </form>
+         <a class="practic__button" href="practic.html">Практика</a>
+      </main>
+      <footer class="footer"></footer>
+   </div>
+</body>
+
+</html>

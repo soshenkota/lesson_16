@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/common.css">
+   <link rel="stylesheet" href="css/practic.css">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Practic</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header"></header>
+      <main class="page">
+         <section class="page__main practik">
+            <div class="practik__container">
+               <div class="practik__body body-practic">
+                  <div class="body-practic__picter">
+                     <img class="body-practic__image" src="img/illustration.svg" alt="illustration">
+                  </div>
+                  <div class="body-practic__content content-body">
+                     <!-- Title -->
+                     <div class="content-body__why why">
+                        <h1 class="why__text">Any questions?</h1>
+                        <span class="why__question">Drop us a line</span>
+                     </div>
+                     <!-- Form -->
+                     <form action="#" method="post" enctype="multipart/form-data" class="content-body__data data">
+                        <div class="data__form">
+                           <label for="first-name" class="data__label">First Name*</label>
+                           <input id="first-name" type="text" class="data__input" placeholder="Your first name"
+                              name="first-name">
+                        </div>
+                        <div class="data__form">
+                           <label for="last-name" class="data__label">Last Name*</label>
+                           <input id="last-name" type="text" class="data__input" placeholder="Your last name"
+                              name="last-name">
+                        </div>
+                        <div class="data__form">
+                           <label for="email-01" class="data__label">Email*</label>
+                           <input id="email-01" type="email" class="data__input" placeholder="Your working email"
+                              name="email">
+                        </div>
+                        <div class="data__form">
+                           <label for="phone" class="data__label">Phone</label>
+                           <input id="phone" type="tel" class="data__input" placeholder="Your phone number"
+                              name="phone">
+                        </div>
+                     </form>
+                     <!-- message -->
+                     <form action="#" method="post" enctype="multipart/form-data"
+                        class="content-body__message message-content">
+                        <div class="message-content__form">
+                           <label for="message" class="message-content__label">Message*</label>
+                           <textarea name="message" id="message" class="message-content__area">Your message</textarea>
+                        </div>
+                     </form>
+                     <!-- button -->
+                     <div class="content-body__last check">
+                        <div class="check__box">
+                           <input id="agreement" name="agreement" type="checkbox" class="check__input">
+                           <label for="agreement" class="check__label"><span class="check__text">I agree to receive
+                                 communications from Createx
+                                 Online School</span></label>
+                        </div>
+                        <button class="check__button button">Send message</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      <footer class="footer"></footer>
+   </div>
+</body>
+
+</html>
